@@ -1,0 +1,31 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #ccf2ff;
+
+  left: 3px;
+  color: #FF6600;
+  font-family: Futura;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #f5a6f1;
+}
+
+.active {
+  background-color: #18db2c;
+}
