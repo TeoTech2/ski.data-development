@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       161,          7]
-NotebookDataLength[   1200289,      23004]
-NotebookOptionsPosition[   1195021,      22912]
-NotebookOutlinePosition[   1195414,      22928]
-CellTagsIndexPosition[   1195371,      22925]
+NotebookDataLength[   1203078,      23056]
+NotebookOptionsPosition[   1197425,      22960]
+NotebookOutlinePosition[   1197818,      22976]
+CellTagsIndexPosition[   1197775,      22973]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -5985,17 +5985,21 @@ Cell[BoxData[
   3.877452211808031*^9, 3.8774522696915903`*^9, 3.877452402813134*^9, {
    3.877452437074184*^9, 3.877452552982499*^9}, 3.877454287570427*^9},
  CellLabel->
-  "Out[2391]=",ExpressionUUID->"dd7de2a2-5298-404d-b6b2-ac1522c9cf99"],
-
-Cell[BoxData[
- RowBox[{"311.0087091444407`", "\[VeryThinSpace]", "-", 
-  RowBox[{"0.08697998089558333`", " ", "#1"}], "-", 
-  RowBox[{"1.0560409216823694`", " ", "#2"}], "-", 
-  RowBox[{"1.2658131906741508`", " ", "#3"}]}]], "Output",
- CellChangeTimes->{3.877454434024976*^9},
- CellLabel->
-  "Out[2399]=",ExpressionUUID->"066d1b19-6be2-4ce9-bfd5-6c7eee222675"]
+  "Out[2391]=",ExpressionUUID->"dd7de2a2-5298-404d-b6b2-ac1522c9cf99"]
 }, Open  ]],
+
+Cell["\<\
+Here is a set of women with their 3k time (sec), pull-ups, and push-ups -> \
+USSA points. We can use the Predict[] function to create a linear-regression \
+function, or small-NN to get an idea of what variables matter in athlete \
+performance. the variable that matters the most in athlete performance \
+suprisingly is 3k time and push-ups, whereas pullups matter much less in \
+athlete performance. However, it is much easier to increase number of pushups \
+than 3k time, so this variable can probably be gamed. \
+\>", "Text",
+ CellChangeTimes->{{3.877803857475521*^9, 
+  3.877803924532106*^9}},ExpressionUUID->"14595614-fdc3-4263-b486-\
+c3e2d7fedd7c"],
 
 Cell[CellGroupData[{
 
@@ -12308,6 +12312,20 @@ zGGcrapJGhvB9Y11Q/ajWJ7V4FzyAS+caKr7PIZ3WjYbeE7gP7PFQWs=
  CellLabel->"Out[23]=",ExpressionUUID->"0c56e6fc-ecbd-4207-936b-b5996d6e4303"]
 }, Open  ]],
 
+Cell["\<\
+Here is an interesting probability distribution of a women with 700 second 3k \
+time, 5 pullups, 20 pushups. We can see we are 99% confident this skier will \
+score between ~120 -> 170 points this season! this is really cool because now \
+we have a super accurate way of understanding where you might fall based on \
+some variables. (https://en.wikipedia.org/wiki/Goodhart%27s_law) -> skiers \
+can not know about this though, or it will automatically make the model fail! \
+Interesting statistical fact! \
+\>", "Text",
+ CellChangeTimes->{{3.8778039335026007`*^9, 3.877804018515645*^9}, {
+  3.877804063078658*^9, 
+  3.8778040853780327`*^9}},ExpressionUUID->"ae1598fa-a11f-4ec0-8fb5-\
+8c5aaf96423c"],
+
 Cell[CellGroupData[{
 
 Cell[BoxData[
@@ -12824,6 +12842,22 @@ Cell[BoxData[
  CellLabel->
   "In[151]:=",ExpressionUUID->"5280e66b-1169-400c-aaca-2605ece8a7c7"],
 
+Cell["\<\
+Here is a cool example of how increasing the skiers #pullups will drop their \
+USSA points by 20 points, wheras increasing their #of pushups actually seems \
+to increase their USSA points! We are thinking now about the NN, not the \
+linear regression model! Interestingly enough the NN model says that a female \
+skier will actually suffer in performance with a greater number of pushups, \
+up until a point, when the benefits could kick in. I think this is probably \
+incorrect, what is more likely is that high performing skiers and confident \
+skiers will use better pushup form when they are tested, and maybe some \
+skiers who are trying to make testing requirements might be a little more \
+iffy! \
+\>", "Text",
+ CellChangeTimes->{{3.8778040925994368`*^9, 
+  3.8778042413809958`*^9}},ExpressionUUID->"0cdb034e-5855-41b1-ae24-\
+296ac5e50776"],
+
 Cell[BoxData[
  RowBox[{
   GraphicsBox[{{{}, {}, 
@@ -13185,6 +13219,15 @@ xY1w6wkOmrtvrClcTpN+97HjzyQHm59HSV1aRtb70HyjrCkOjrs3rD8uQ/4/
  CellChangeTimes->{{3.877135468426811*^9, 
   3.877135470227463*^9}},ExpressionUUID->"830728c1-83af-47e3-8a0b-\
 6bb973782301"],
+
+Cell["\<\
+A 3D plot of a skier with 700 sec 3k time, and 8 pullups and 5 pushups. \
+Moving in the x,y directions in the plot does what we do above, and shows how \
+increasing physical capacity improves performance! \
+\>", "Text",
+ CellChangeTimes->{{3.8778042500878353`*^9, 
+  3.877804292383231*^9}},ExpressionUUID->"099667d3-24db-4e49-b8e5-\
+32c9ac17037a"],
 
 Cell[CellGroupData[{
 
@@ -14715,6 +14758,11 @@ Cell[BoxData[
    "}"}]}]], "Input",
  Background->RGBColor[
   0.94, 0.88, 0.94],ExpressionUUID->"8eda59e5-d05b-4747-9210-50ccf7346bd0"],
+
+Cell["Some cool histogram data! ", "Text",
+ CellChangeTimes->{{3.877804300586486*^9, 
+  3.877804306858622*^9}},ExpressionUUID->"8ef86679-a6ae-412e-9ae4-\
+ce9c19742f7c"],
 
 Cell[BoxData[
  RowBox[{
@@ -22911,7 +22959,7 @@ Cell[BoxData[
 }, Open  ]]
 },
 WindowSize->{1293, 855},
-WindowMargins->{{Automatic, 73}, {Automatic, 0}},
+WindowMargins->{{73, Automatic}, {Automatic, 0}},
 FrontEndVersion->"13.1 for Mac OS X x86 (64-bit) (June 21, 2022)",
 StyleDefinitions->"Default.nb",
 ExpressionUUID->"23baf6b5-96ea-4a62-bde5-b321c487f5c2"
@@ -22935,7 +22983,7 @@ Cell[CellGroupData[{
 Cell[6947, 198, 144, 3, 30, "Input",ExpressionUUID->"a53465a5-4df2-41b3-b436-fd6bc69f07ae"],
 Cell[7094, 203, 574, 13, 51, "Output",ExpressionUUID->"7ce9bba1-8f14-4275-a115-702d38faab45"]
 }, Open  ]],
-Cell[7683, 219, 370, 10, 60, "Input",ExpressionUUID->"7311bbcc-5133-41ca-8702-7c0639b7f419"],
+Cell[7683, 219, 370, 10, 30, "Input",ExpressionUUID->"7311bbcc-5133-41ca-8702-7c0639b7f419"],
 Cell[CellGroupData[{
 Cell[8078, 233, 645, 11, 30, "Input",ExpressionUUID->"97ce154d-1827-41a0-8f4c-fff8964595cb"],
 Cell[8726, 246, 2679, 49, 173, "Output",ExpressionUUID->"43e4aba7-1151-4026-aeac-001a443dfb3d"]
@@ -22944,65 +22992,69 @@ Cell[CellGroupData[{
 Cell[11442, 300, 2070, 49, 110, "Input",ExpressionUUID->"b5d6d558-58ce-4692-ad24-d0cb2fe61f6d"],
 Cell[13515, 351, 99778, 1781, 75, "Output",ExpressionUUID->"6b34483b-d75c-49d0-be54-82e59ea50dac"],
 Cell[113296, 2134, 51203, 949, 75, "Output",ExpressionUUID->"f16c554f-8840-415d-9669-1a261b8ed568"],
-Cell[164502, 3085, 97119, 1929, 220, "Output",ExpressionUUID->"f9f4efc9-03a6-4f06-925d-d586a76dfdd7"],
+Cell[164502, 3085, 97119, 1929, 79, "Output",ExpressionUUID->"f9f4efc9-03a6-4f06-925d-d586a76dfdd7"],
 Cell[261624, 5016, 51083, 947, 75, "Output",ExpressionUUID->"e78454a2-9d61-47b8-a5db-cc8ac0b65add"]
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[312744, 5968, 411, 7, 30, "Input",ExpressionUUID->"d2bfd5b2-b894-4daa-81b1-fcec4517e211"],
-Cell[313158, 5977, 503, 10, 48, "Output",ExpressionUUID->"dd7de2a2-5298-404d-b6b2-ac1522c9cf99"],
-Cell[313664, 5989, 360, 7, 48, "Output",ExpressionUUID->"066d1b19-6be2-4ce9-bfd5-6c7eee222675"]
+Cell[313158, 5977, 503, 10, 48, "Output",ExpressionUUID->"dd7de2a2-5298-404d-b6b2-ac1522c9cf99"]
+}, Open  ]],
+Cell[313676, 5990, 663, 11, 81, "Text",ExpressionUUID->"14595614-fdc3-4263-b486-c3e2d7fedd7c"],
+Cell[CellGroupData[{
+Cell[314364, 6005, 651, 16, 30, "Input",ExpressionUUID->"4ff82b3e-7c49-497a-ba5b-a1ce0b898aa7"],
+Cell[315018, 6023, 171, 3, 48, "Output",ExpressionUUID->"ee3d4b04-d58d-45a4-8edb-338b5670c68e"]
+}, Open  ]],
+Cell[315204, 6029, 7656, 222, 257, "Input",ExpressionUUID->"6f1afd13-2f66-496d-a60e-15145fe07a5e"],
+Cell[CellGroupData[{
+Cell[322885, 6255, 287, 5, 30, "Input",ExpressionUUID->"1e13184a-0eb3-4b05-bb84-89787adaed8a"],
+Cell[323175, 6262, 262660, 4897, 500, "Output",ExpressionUUID->"c86573c9-0e6a-4626-80ed-4ed47f41f4db"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[314061, 6001, 651, 16, 30, "Input",ExpressionUUID->"4ff82b3e-7c49-497a-ba5b-a1ce0b898aa7"],
-Cell[314715, 6019, 171, 3, 48, "Output",ExpressionUUID->"ee3d4b04-d58d-45a4-8edb-338b5670c68e"]
+Cell[585872, 11164, 525, 10, 46, "Input",ExpressionUUID->"e981b11a-a446-48d1-bd8c-10a75f28aefd"],
+Cell[586400, 11176, 52019, 1135, 641, "Output",ExpressionUUID->"0c56e6fc-ecbd-4207-936b-b5996d6e4303"]
 }, Open  ]],
-Cell[314901, 6025, 7656, 222, 257, "Input",ExpressionUUID->"6f1afd13-2f66-496d-a60e-15145fe07a5e"],
+Cell[638434, 12314, 707, 12, 81, "Text",ExpressionUUID->"ae1598fa-a11f-4ec0-8fb5-8c5aaf96423c"],
 Cell[CellGroupData[{
-Cell[322582, 6251, 287, 5, 30, "Input",ExpressionUUID->"1e13184a-0eb3-4b05-bb84-89787adaed8a"],
-Cell[322872, 6258, 262660, 4897, 500, "Output",ExpressionUUID->"c86573c9-0e6a-4626-80ed-4ed47f41f4db"]
+Cell[639166, 12330, 1083, 30, 68, "Input",ExpressionUUID->"f6ffe2af-6c97-4e42-a8c3-db72053aa51f"],
+Cell[640252, 12362, 25015, 431, 278, "Output",ExpressionUUID->"ed3af522-4b70-4575-9615-b4f1e4c8be37"]
 }, Open  ]],
+Cell[665282, 12796, 1733, 46, 73, "Input",ExpressionUUID->"5280e66b-1169-400c-aaca-2605ece8a7c7"],
+Cell[667018, 12844, 857, 14, 104, "Text",ExpressionUUID->"0cdb034e-5855-41b1-ae24-296ac5e50776"],
+Cell[667878, 12860, 19347, 360, 321, "Input",ExpressionUUID->"830728c1-83af-47e3-8a0b-6bb973782301"],
+Cell[687228, 13222, 357, 7, 58, "Text",ExpressionUUID->"099667d3-24db-4e49-b8e5-32c9ac17037a"],
 Cell[CellGroupData[{
-Cell[585569, 11160, 525, 10, 46, "Input",ExpressionUUID->"e981b11a-a446-48d1-bd8c-10a75f28aefd"],
-Cell[586097, 11172, 52019, 1135, 641, "Output",ExpressionUUID->"0c56e6fc-ecbd-4207-936b-b5996d6e4303"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[638153, 12312, 1083, 30, 68, "Input",ExpressionUUID->"f6ffe2af-6c97-4e42-a8c3-db72053aa51f"],
-Cell[639239, 12344, 25015, 431, 278, "Output",ExpressionUUID->"ed3af522-4b70-4575-9615-b4f1e4c8be37"]
-}, Open  ]],
-Cell[664269, 12778, 1733, 46, 73, "Input",ExpressionUUID->"5280e66b-1169-400c-aaca-2605ece8a7c7"],
-Cell[666005, 12826, 19347, 360, 321, "Input",ExpressionUUID->"830728c1-83af-47e3-8a0b-6bb973782301"],
-Cell[CellGroupData[{
-Cell[685377, 13190, 681, 19, 30, "Input",ExpressionUUID->"c557062d-5394-4339-bbe6-9a793d2af7cf"],
-Cell[686061, 13211, 78020, 1279, 158, "Output",ExpressionUUID->"dbe4af4c-0ea9-453d-be36-d17a711d585b"]
+Cell[687610, 13233, 681, 19, 30, "Input",ExpressionUUID->"c557062d-5394-4339-bbe6-9a793d2af7cf"],
+Cell[688294, 13254, 78020, 1279, 158, "Output",ExpressionUUID->"dbe4af4c-0ea9-453d-be36-d17a711d585b"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[764118, 14495, 1383, 37, 68, "Input",ExpressionUUID->"fb1922c7-c8bc-41cb-897f-c34b30ed42b3"],
-Cell[765504, 14534, 594, 13, 37, "Output",ExpressionUUID->"c50a3979-a694-4c38-b506-e5770e75cb32"]
+Cell[766351, 14538, 1383, 37, 68, "Input",ExpressionUUID->"fb1922c7-c8bc-41cb-897f-c34b30ed42b3"],
+Cell[767737, 14577, 594, 13, 37, "Output",ExpressionUUID->"c50a3979-a694-4c38-b506-e5770e75cb32"]
 }, Open  ]],
-Cell[766113, 14550, 3490, 96, 131, "Input",ExpressionUUID->"b2676b81-851b-47ec-8163-61fec1eaafcd"],
-Cell[769606, 14648, 2067, 68, 89, "Input",ExpressionUUID->"8eda59e5-d05b-4747-9210-50ccf7346bd0"],
-Cell[771676, 14718, 275, 6, 30, "Input",ExpressionUUID->"05a57ef6-90e1-462a-a00b-9fe4e5c2f104"],
-Cell[771954, 14726, 663, 21, 30, "Input",ExpressionUUID->"47af85bb-14a8-44e6-b49b-5df3f74383a1"],
+Cell[768346, 14593, 3490, 96, 131, "Input",ExpressionUUID->"b2676b81-851b-47ec-8163-61fec1eaafcd"],
+Cell[771839, 14691, 2067, 68, 89, "Input",ExpressionUUID->"8eda59e5-d05b-4747-9210-50ccf7346bd0"],
+Cell[773909, 14761, 168, 3, 35, "Text",ExpressionUUID->"8ef86679-a6ae-412e-9ae4-ce9c19742f7c"],
+Cell[774080, 14766, 275, 6, 30, "Input",ExpressionUUID->"05a57ef6-90e1-462a-a00b-9fe4e5c2f104"],
+Cell[774358, 14774, 663, 21, 30, "Input",ExpressionUUID->"47af85bb-14a8-44e6-b49b-5df3f74383a1"],
 Cell[CellGroupData[{
-Cell[772642, 14751, 1461, 37, 46, "Input",ExpressionUUID->"43b10535-1353-46d5-b385-022c48e9a5b2"],
-Cell[774106, 14790, 15367, 433, 151, "Output",ExpressionUUID->"1a16dd7a-057c-4e8c-b02a-bb3013f5513c"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[789510, 15228, 1164, 33, 46, "Input",ExpressionUUID->"c02d118f-c258-4b77-8da5-519802c21ade"],
-Cell[790677, 15263, 14480, 408, 171, "Output",ExpressionUUID->"a2b96cb7-5cbd-4508-a514-3a60b5948fde"]
+Cell[775046, 14799, 1461, 37, 46, "Input",ExpressionUUID->"43b10535-1353-46d5-b385-022c48e9a5b2"],
+Cell[776510, 14838, 15367, 433, 151, "Output",ExpressionUUID->"1a16dd7a-057c-4e8c-b02a-bb3013f5513c"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[805194, 15676, 1164, 33, 46, "Input",ExpressionUUID->"12f9b1be-5928-49bd-9fa5-34563678fec2"],
-Cell[806361, 15711, 14438, 407, 179, "Output",ExpressionUUID->"1fc99f1e-ec27-4149-9f8b-d53847a94e24"]
+Cell[791914, 15276, 1164, 33, 46, "Input",ExpressionUUID->"c02d118f-c258-4b77-8da5-519802c21ade"],
+Cell[793081, 15311, 14480, 408, 171, "Output",ExpressionUUID->"a2b96cb7-5cbd-4508-a514-3a60b5948fde"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[820836, 16123, 1162, 33, 46, "Input",ExpressionUUID->"c769507a-6da8-4d28-a16f-6098e11f812c"],
-Cell[822001, 16158, 15904, 450, 201, "Output",ExpressionUUID->"9d52685a-76c2-4ea9-938d-d010a61fe1b4"]
+Cell[807598, 15724, 1164, 33, 46, "Input",ExpressionUUID->"12f9b1be-5928-49bd-9fa5-34563678fec2"],
+Cell[808765, 15759, 14438, 407, 179, "Output",ExpressionUUID->"1fc99f1e-ec27-4149-9f8b-d53847a94e24"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[837942, 16613, 181134, 3342, 19, "Input",ExpressionUUID->"cf0b3eb9-1d03-4327-adce-03bba914be2c",
+Cell[823240, 16171, 1162, 33, 46, "Input",ExpressionUUID->"c769507a-6da8-4d28-a16f-6098e11f812c"],
+Cell[824405, 16206, 15904, 450, 201, "Output",ExpressionUUID->"9d52685a-76c2-4ea9-938d-d010a61fe1b4"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[840346, 16661, 181134, 3342, 19, "Input",ExpressionUUID->"cf0b3eb9-1d03-4327-adce-03bba914be2c",
  CellOpen->False],
-Cell[1019079, 19957, 175914, 2951, 19, "Output",ExpressionUUID->"f4152d1e-7a20-4d79-8e65-a6b1de4ad88c",
+Cell[1021483, 20005, 175914, 2951, 19, "Output",ExpressionUUID->"f4152d1e-7a20-4d79-8e65-a6b1de4ad88c",
  CellOpen->False]
 }, Open  ]]
 }, Open  ]]
